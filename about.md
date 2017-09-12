@@ -4,9 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Jarosław Michalik
-
-### More Information
+## Jarosław Michalik
 
 Android developer @ Sointeractive
 
