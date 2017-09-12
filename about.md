@@ -4,11 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Jarosław Michalik
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Android developer @ Sointeractive
+
+Tech mentor @ Behappy.io
+
+Organizer and Chairman @ SFI IT Academic Festival
 
 ### Contact me
 
