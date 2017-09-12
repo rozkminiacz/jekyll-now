@@ -16,4 +16,4 @@ Organizer and Chairman @ SFI IT Academic Festival
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[michalik@protonmail.ch](mailto:michalik@protonmail.ch)
