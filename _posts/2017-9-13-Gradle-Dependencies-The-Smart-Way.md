@@ -1,4 +1,4 @@
-# Managing your dependencies the smart way.
+## Manage your dependencies like a boss
 
 * Standard build.gradle in Android projects. Overview where everything is.
 * Defining variables (version codes)
