@@ -1,13 +1,11 @@
 ## Manage your dependencies like a boss
-
-* Standard build.gradle in Android projects. Overview where everything is.
-* Defining variables (version codes)
-* compile vs testCompile
-* dependencies.gradle in separate file.
-* compile something only in one flavor
+* defining variables (version codes)
+* custom compile configurations
+* dependencies.gradle in separate file
 
 ## build.gradle
-I bet your module level build.gradle file looks like this: 
+I bet your module level build.gradle file looks like this:
+ 
 ```groovy
 apply plugin: 'com.android.application'
 apply plugin: 'me.tatarka.retrolambda'
