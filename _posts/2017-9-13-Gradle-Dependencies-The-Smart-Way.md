@@ -105,6 +105,20 @@ Now we can use it in our build file like that:
                }
 ```
 
+### Automate naming apks on different flavors and configs:
+
+```groovy
+    applicationVariants.all { variant ->
+       variant.outputs.each { output ->
+           def outputFile = output.outputFile
+           def appName = "app-" + "${variant.baseName.replace("-release", "")}" + "_v" + "${variant.versionName}.apk"
+           output.outputFile = new File(outputFile.parent, appName)
+       }
+    }
+
+```
+
+## Keep dependencies in separate file
 Now let's do something more tricky. Create file dependencies.gradle in your project directory:
 
 ```groovy
@@ -115,15 +129,15 @@ ext {
     def OkHttp3Version = '3.8.0'
 
     rxDependencies = [
-                   rxJava : "io.reactivex.rxjava2:rxjava:${RxJava2Version}",
+                   rxJava    : "io.reactivex.rxjava2:rxjava:${RxJava2Version}",
                    rxAndroid : "io.reactivex.rxjava2:rxandroid:${RxAndroid2Version}",
     ]
 
     networkDependencies = [
-                   retrofit: "com.squareup.retrofit2:retrofit:${Retrofit2Version}",
-                   okhttp  : "com.squareup.okhttp3:okhttp:${OkHttp3Version}",
-                   converterGson : "com.squareup.retrofit2:converter-gson:${Retrofit2Version}",
-                   adapterRxJava2 : "com.squareup.retrofit2:adapter-rxjava2:${Retrofit2Version}"
+                   retrofit         : "com.squareup.retrofit2:retrofit:${Retrofit2Version}",
+                   okhttp           : "com.squareup.okhttp3:okhttp:${OkHttp3Version}",
+                   converterGson    : "com.squareup.retrofit2:converter-gson:${Retrofit2Version}",
+                   adapterRxJava2   : "com.squareup.retrofit2:adapter-rxjava2:${Retrofit2Version}"
     ]
 }
 ```
@@ -141,17 +155,12 @@ buildscript {
         classpath 'me.tatarka:gradle-retrolambda:3.2.5'
         classpath 'com.android.tools.build:gradle:2.3.3'
         classpath "io.realm:realm-gradle-plugin:2.2.0"
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-        classpath 'com.google.gms:google-services:3.0.0'
     }
 }
 
 allprojects {
     repositories {
         jcenter()
-        maven { url "https://jitpack.io" }
     }
 }
 
@@ -162,3 +171,57 @@ task clean(type: Delete) {
 apply from: 'dependencies.gradle'
 ```
 
+Now you can use it in your module level build.gradle file:
+```groovy
+dependencies {
+        //other dependencies
+        compile networkDependencies.values()
+        compile rxDependencies.values()
+        //other dependencies
+}
+```
+
+I highly recommend to write these blocks for all your grouped libraries.
+Now you build.gradle is much cleaner and easier to maintain. 
+Its also great because you can keep.your favourite libraries in one file, keep it on some gist and just copy-paste it when creating new project. 
+Much better than commenting and uncommenting specific lines.
+
+## Compile configurations
+You don't need jUnit or Mockito in you production code. If you use it, something went **very wrong**.
+
+Gradle gives us some predefined configurations:
+
+```groovy
+    testCompile unitTestDependencies.values()
+    androidTestCompile testDependencies.values()
+```
+It is set by default in android starter projects. 
+
+### Custom configurations
+Let’s say you have to build app for debug, other for your QA and build another one to show to your customers, 
+and you want to include in it different version of your module. 
+Based on flavor and build type following compile configs will be generated.
+
+```groovy
+freeFlavorReleaseCompile project(path: ':mylibrary', configuration: 'release')
+freeFlavorQaCompile project(path: ':mylibrary', configuration: 'debug')
+freeFlavorDebugCompile project(path: ':mylibrary', configuration: 'debug')
+
+```
+
+
+## Use environmental variables
+```groovy
+signingConfigs {
+   release {
+       storeFile file("my_secret_key.jks")
+       keyAlias 'demoapp'
+       storePassword "${System.env.PW_DA_KEYSTORE}"
+       keyPassword "${System.env.PW_DA_KEYSTORE}"
+   }
+}
+
+```
+
+Use it for keeping your developer keys secret. You don't have to (and probably should not) keep your google 
+play secrets on repo and share across your team. The same applies if you have some other secrets that you want to use only during build.
