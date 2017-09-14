@@ -37,18 +37,18 @@ android {
     }
     
     productFlavors {
-               freeFlavor {
-                       applicationId "com.rozkmin.demoappfree"
-                       resValue("string", "app_name", "DemoAppFree")
-                       versionName "1.20.2"
-               }
-               premiumFlavor{
-                       applicationId "com.rozkmin.demoapppremium"
-                       resValue("string", "app_name", "DemoAppPremium")
-                       versionName "1.20.2" 
-                   }
-               }
-           }
+        freeFlavor {
+                applicationId "com.rozkmin.demoappfree"
+                resValue("string", "app_name", "DemoAppFree")
+                versionName "1.20.2"
+        }
+        premiumFlavor{
+                applicationId "com.rozkmin.demoapppremium"
+                resValue("string", "app_name", "DemoAppPremium")
+                versionName "1.20.2" 
+            }
+        }
+    }
 
 dependencies {
     dependencies {
@@ -82,37 +82,37 @@ First that we will do to make this code clean will be introducing variables.
 
 Write 
 ```groovy
-    def googlePlayVersion = '1.20.2' 
+def googlePlayVersion = '1.20.2' 
 ```
 
 Now we can use it in our build file like that:
 
 ```groovy
-    productFlavors {
-               freeFlavor {
-                       applicationId "com.rozkmin.demoappfree"
-                       resValue("string", "app_name", "DemoAppFree")
-                       versionName "$googlePlayVersion"
-                       }
-                
-               premiumFlavor {
-                       applicationId "com.rozkmin.demoapppremium"
-                       resValue("string", "app_name", "DemoAppPremium")
-                       versionName "$googlePlayVersion"
-                       }
-               }
+productFlavors {
+    freeFlavor {
+        applicationId "com.rozkmin.demoappfree"
+        resValue("string", "app_name", "DemoAppFree")
+        versionName "$googlePlayVersion"
+        }
+            
+    premiumFlavor {
+        applicationId "com.rozkmin.demoapppremium"
+        resValue("string", "app_name", "DemoAppPremium")
+        versionName "$googlePlayVersion"
+        }
+}
 ```
 
 ### Automate naming apks on different flavors and configs:
 
 ```groovy
-    applicationVariants.all { variant ->
-       variant.outputs.each { output ->
-           def outputFile = output.outputFile
-           def appName = "app-" + "${variant.baseName.replace("-release", "")}" + "_v" + "${variant.versionName}.apk"
-           output.outputFile = new File(outputFile.parent, appName)
-       }
-    }
+applicationVariants.all { variant ->
+   variant.outputs.each { output ->
+       def outputFile = output.outputFile
+       def appName = "app-" + "${variant.baseName.replace("-release", "")}" + "_v" + "${variant.versionName}.apk"
+       output.outputFile = new File(outputFile.parent, appName)
+   }
+}
 
 ```
 
@@ -127,15 +127,15 @@ ext {
     def OkHttp3Version = '3.8.0'
 
     rxDependencies = [
-                   rxJava    : "io.reactivex.rxjava2:rxjava:${RxJava2Version}",
-                   rxAndroid : "io.reactivex.rxjava2:rxandroid:${RxAndroid2Version}",
+        rxJava    : "io.reactivex.rxjava2:rxjava:${RxJava2Version}",
+        rxAndroid : "io.reactivex.rxjava2:rxandroid:${RxAndroid2Version}",
     ]
 
     networkDependencies = [
-                   retrofit         : "com.squareup.retrofit2:retrofit:${Retrofit2Version}",
-                   okhttp           : "com.squareup.okhttp3:okhttp:${OkHttp3Version}",
-                   converterGson    : "com.squareup.retrofit2:converter-gson:${Retrofit2Version}",
-                   adapterRxJava2   : "com.squareup.retrofit2:adapter-rxjava2:${Retrofit2Version}"
+        retrofit         : "com.squareup.retrofit2:retrofit:${Retrofit2Version}",
+        okhttp           : "com.squareup.okhttp3:okhttp:${OkHttp3Version}",
+        converterGson    : "com.squareup.retrofit2:converter-gson:${Retrofit2Version}",
+        adapterRxJava2   : "com.squareup.retrofit2:adapter-rxjava2:${Retrofit2Version}"
     ]
 }
 ```
@@ -172,10 +172,10 @@ apply from: 'dependencies.gradle'
 Now you can use it in your module level build.gradle file:
 ```groovy
 dependencies {
-        //other dependencies
-        compile networkDependencies.values()
-        compile rxDependencies.values()
-        //other dependencies
+    //other dependencies
+    compile networkDependencies.values()
+    compile rxDependencies.values()
+    //other dependencies
 }
 ```
 
@@ -190,8 +190,8 @@ You don't need jUnit or Mockito in you production code. If you use it, something
 Gradle gives us some predefined configurations:
 
 ```groovy
-    testCompile unitTestDependencies.values()
-    androidTestCompile testDependencies.values()
+testCompile unitTestDependencies.values()
+androidTestCompile testDependencies.values()
 ```
 It is set by default in android starter projects. 
 
