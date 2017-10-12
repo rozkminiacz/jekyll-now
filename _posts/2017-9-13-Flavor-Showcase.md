@@ -1,5 +1,5 @@
 ## We'll try to do the following thing:
-* cwite an app that shows random image from lorempixel
+* create an app that shows random image from lorempixel
 * create two flavors
 * use Picasso in first flavor, in second use Glide
 * keep Glide and Picasso imports far away from main code
@@ -57,7 +57,7 @@ android {
 
 
 
-## Make our view with image and text
+## Write our view with image and text
 
 ### MainActivity
 ```xml
@@ -91,10 +91,125 @@ android {
 ## Write some interfaces
 
 Lets create our interface and @Inject it to our MainActivity
-
-### The callback way
-
-### The reactive way
+``` java
+public interface ImageManager {
+    void loadImage(String imageUrl, ImageView target, Context context);
+}
+```
 
 ## Implementation time
 
+### Picasso implementation
+app/src/picasso/java/com/rozkmin/flavorshowcase
+``` java
+public class PicassoImageManager implements ImageManager {
+
+    @Inject PicassoImageManager(){}
+
+    @Override
+    public void loadImage(String imageUrl, ImageView target, Context context) {
+        Picasso.with(context).load(imageUrl).into(target);
+    }
+}
+```
+
+``` java
+@Module
+public class ImageManagerModule {
+    @Provides
+    ImageManager provideImageManager(final PicassoImageManager manager){
+        return manager;
+    }
+}
+```
+
+
+### Glide implementation
+app/src/glide/java/com/rozkmin/flavorshowcase
+``` java
+public class PicassoImageManager implements ImageManager {
+
+    @Inject PicassoImageManager(){}
+
+    @Override
+    public void loadImage(String imageUrl, ImageView target, Context context) {
+        Picasso.with(context).load(imageUrl).into(target);
+    }
+}
+```
+
+``` java
+@Module
+public class ImageManagerModule {
+    @Provides
+    ImageManager provideImageManager(final GlideImageManager manager){
+        return manager;
+    }
+}
+```
+
+## Inject image manager
+We created two ImageManagerModule.java files in our flavors dirs. When we switch flavor in gradle, automaticly proper manager will be loaded.
+
+Create dagger component:
+``` java
+@Component(modules = ImageManagerModule.class)
+public interface MainComponent {
+    void inject(MainActivity activity);
+}
+```
+
+And inject it in your MainActivity
+
+``` java
+public class MainActivity extends AppCompatActivity {
+
+    MainComponent mainComponent;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mainComponent = DaggerMainComponent.builder().imageManagerModule(new ImageManagerModule()).build();
+        mainComponent.inject(this);
+
+        setContentView(R.layout.activity_main);
+    }
+}
+```
+
+You must build your project to have DaggerMainComponent generated.
+
+Now we can @Inject ImageManager and load some image from network:
+
+```
+public class MainActivity extends AppCompatActivity {
+
+    MainComponent mainComponent;
+
+    @Inject
+    ImageManager imageManager;
+    
+    ImageView imageView;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        (...)
+        loadImage();
+        loadFlavorData();
+    }
+
+    private void loadFlavorData() {
+        TextView text = findViewById(R.id.activity_main_flavor);
+        text.setText("Loaded with "+BuildConfig.FLAVOR);
+    }
+
+    private void loadImage() {
+        imageView = findViewById(R.id.activity_main_image);
+        imageManager.loadImage("http://lorempixel.com/1024/1366/cats", imageView, this);
+    }
+}
+```
+
+Build project and test all flavors.
+
+Now you can load images without any Glide or Picasso imports in your code!
