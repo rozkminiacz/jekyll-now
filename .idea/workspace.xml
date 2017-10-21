@@ -135,8 +135,8 @@
         <entry file="file://$PROJECT_DIR$/talks.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="255">
-                <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <first_editor relative-caret-position="345">
+                <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -681,7 +681,7 @@
       <workItem from="1505331921949" duration="1302000" />
       <workItem from="1505580352883" duration="149000" />
       <workItem from="1508172803366" duration="971000" />
-      <workItem from="1508585745189" duration="514000" />
+      <workItem from="1508585745189" duration="679000" />
     </task>
     <task id="LOCAL-00001" summary="Updated flavor showcase">
       <created>1505373547972</created>
@@ -697,11 +697,18 @@
       <option name="project" value="LOCAL" />
       <updated>1508586137340</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added talks.md">
+      <created>1508586270402</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1508586270402</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8829000" />
+    <option name="totallyTimeSpent" value="8994000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1369,8 +1376,8 @@
     <entry file="file://$PROJECT_DIR$/talks.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="255">
-            <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <first_editor relative-caret-position="345">
+            <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
             <folding />
           </first_editor>
           <second_editor />

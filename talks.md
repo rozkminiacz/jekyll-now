@@ -6,7 +6,7 @@ permalink: /talks/
 
 # My conference and meetup talks
 
-## Fizyka dla Medyka”
+## Fizyka dla Medyka
 > [fizykadlamedyka.agh.edu.pl]()
 > ### Touch Dynamics as a biometrics feature
 > #### 1-3 IV 2016, Kraków
@@ -15,7 +15,13 @@ permalink: /talks/
 ## Liczby-Komputery-Życie
 > [https://www.facebook.com/LiczbyKomputeryZycie]()
 > ### Touch Dynamics as a biometrics feature
->#### 8 IV 2016, Kraków
+> #### 8 IV 2016, Kraków
+
+## 53. Konferencja Studenckich Kół Naukowych AGH - sesja Fizyki i Matematyki
+
+> [http://www.agh.edu.pl/konferencje/konferencja/article/53-konferencja-studenckich-kol-naukowych/]()
+> ### Touch Dynamics as a biometrics feature
+> #### 5 V 2016, Kraków
 
 
 ### Want me to speak at your event?
