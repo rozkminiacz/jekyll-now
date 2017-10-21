@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Conferencje, meetup talks
+title: Conferences, meetup talks
 permalink: /talks/
 ---
-
-# My conference and meetup talks
 
 ## BIT Student Meetup
 ### Architecture in modern web apps
