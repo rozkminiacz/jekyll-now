@@ -6,28 +6,35 @@ permalink: /talks/
 
 # My conference and meetup talks
 
+## BIT Student Meetup
+### Architecture in modern web apps
+#### 7 XI 2016, Kraków
+
+---
+
+
 ## Fizyka dla Medyka
-> [fizykadlamedyka.agh.edu.pl]()
-> ### Touch Dynamics as a biometrics feature
-> #### 1-3 IV 2016, Kraków
+[fizykadlamedyka.agh.edu.pl]()
+### Touch Dynamics as a biometrics feature
+#### 1-3 IV 2016, Kraków
 
 ---
 
 ## Liczby-Komputery-Życie
-> [https://www.facebook.com/LiczbyKomputeryZycie]()
-> ### Touch Dynamics as a biometrics feature
-> #### 8 IV 2016, Kraków
+[https://www.facebook.com/LiczbyKomputeryZycie]()
+### Touch Dynamics as a biometrics feature
+#### 8 IV 2016, Kraków
 
 ---
 
 ## 53. Konferencja Studenckich Kół Naukowych AGH - sesja Fizyki i Matematyki
 
-> [http://www.agh.edu.pl/konferencje/konferencja/article/53-konferencja-studenckich-kol-naukowych/]()
-> ### Touch Dynamics as a biometrics feature
-> #### 5 V 2016, Kraków
+[http://www.agh.edu.pl/konferencje/konferencja/article/53-konferencja-studenckich-kol-naukowych/]()
+### Touch Dynamics as a biometrics feature
+#### 5 V 2016, Kraków
 
 ---
 
-### Want me to speak at your event?
+# Want me to speak at your event?
 
-[michalik@protonmail.ch](mailto:michalik@protonmail.ch)
+> [michalik@protonmail.ch](mailto:michalik@protonmail.ch)
