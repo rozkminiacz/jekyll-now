@@ -11,11 +11,14 @@ permalink: /talks/
 > ### Touch Dynamics as a biometrics feature
 > #### 1-3 IV 2016, Kraków
 
+---
 
 ## Liczby-Komputery-Życie
 > [https://www.facebook.com/LiczbyKomputeryZycie]()
 > ### Touch Dynamics as a biometrics feature
 > #### 8 IV 2016, Kraków
+
+---
 
 ## 53. Konferencja Studenckich Kół Naukowych AGH - sesja Fizyki i Matematyki
 
@@ -23,6 +26,7 @@ permalink: /talks/
 > ### Touch Dynamics as a biometrics feature
 > #### 5 V 2016, Kraków
 
+---
 
 ### Want me to speak at your event?
 
