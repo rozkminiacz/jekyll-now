@@ -46,8 +46,3 @@ ___
 #### 8 IV 2016, Kraków
 
 ---
-
-
-# Want me to speak at your event?
-
-> [michalik@protonmail.ch](mailto:michalik@protonmail.ch)
