@@ -8,7 +8,7 @@ permalink: /about/
 
 Android developer @ Sointeractive
 
-Tech mentor @ Behappy.io
+Tech mentor @ Jaksiemasz.care
 
 Organizer and Chairman @ SFI IT Academic Festival
 
