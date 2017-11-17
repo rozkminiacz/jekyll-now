@@ -1,6 +1,6 @@
 Databinding in RecyclerView + Kotlin
 
-![alt text](/_posts/device-2017-11-17-184448.png)
+![Screenshot](https://raw.githubusercontent.com/rozkminiacz/RecyclerDatabinding/master/screenshot.png)
 
 ## Why use it?
 Get rid of boilerplate code. 

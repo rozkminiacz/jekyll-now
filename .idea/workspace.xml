@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d86b5254-dcdf-4a3b-a6c3-0ae0b9328d44" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2017-11-18-RecyclerView-With-Databinding.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-9-13-Flavor-Showcase.md" afterPath="$PROJECT_DIR$/_posts/2017-9-13-Flavor-Showcase.md" />
-    </list>
+    <list default="true" id="d86b5254-dcdf-4a3b-a6c3-0ae0b9328d44" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,35 +79,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017-11-18-RecyclerView-With-Databinding.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2017-11-18-RecyclerView-With-Databinding.md">
+      <file leaf-file-name="2017-11-16-RecyclerView-With-Databinding.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2017-11-16-RecyclerView-With-Databinding.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="268">
-                <caret line="105" column="69" lean-forward="false" selection-start-line="105" selection-start-column="69" selection-end-line="105" selection-end-column="69" />
+              <first_editor relative-caret-position="306">
+                <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
                 <folding>
-                  <marker date="1510940635197" expanded="true" signature="409:415" ph="{" />
-                  <marker date="1510940635197" expanded="true" signature="409:476" ph="{...}" />
-                  <marker date="1510940635197" expanded="true" signature="436:450" ph="{" />
-                  <marker date="1510940635197" expanded="true" signature="464:474" ph="}" />
-                  <marker date="1510940635197" expanded="true" signature="474:476" ph="}" />
-                  <marker date="1510940635197" expanded="true" signature="546:548" ph="{" />
-                  <marker date="1510940635197" expanded="true" signature="546:552" ph="{" />
-                  <marker date="1510940635197" expanded="true" signature="546:622" ph="{...}" />
-                  <marker date="1510940635197" expanded="true" signature="546:623" ph="{...}" />
-                  <marker date="1510940635197" expanded="true" signature="620:622" ph="}" />
-                  <marker date="1510940635197" expanded="true" signature="1753:3452" ph="..." />
-                  <marker date="1510940635197" expanded="true" signature="1765:1894" ph="..." />
-                  <marker date="1510940635197" expanded="true" signature="1784:1882" ph="..." />
-                  <marker date="1510940635197" expanded="true" signature="1972:3442" ph="..." />
-                  <marker date="1510940635197" expanded="true" signature="2357:2697" ph="..." />
-                  <marker date="1510940635197" expanded="true" signature="2717:3060" ph="..." />
-                  <marker date="1510940635197" expanded="true" signature="3080:3422" ph="..." />
-                  <marker date="1510940635197" expanded="true" signature="3943:4706" ph="{...}" />
-                  <marker date="1510940635197" expanded="true" signature="4005:4077" ph="{...}" />
-                  <marker date="1510940635197" expanded="true" signature="4544:4704" ph="{...}" />
-                  <marker date="1510940635197" expanded="true" signature="4593:4698" ph="{...}" />
-                  <marker date="1510940635197" expanded="true" signature="4960:5147" ph="{...}" />
+                  <marker date="1510940862765" expanded="true" signature="435:441" ph="{" />
+                  <marker date="1510940862765" expanded="true" signature="435:502" ph="{...}" />
+                  <marker date="1510940862765" expanded="true" signature="462:476" ph="{" />
+                  <marker date="1510940862765" expanded="true" signature="490:500" ph="}" />
+                  <marker date="1510940862765" expanded="true" signature="500:502" ph="}" />
+                  <marker date="1510940862765" expanded="true" signature="572:574" ph="{" />
+                  <marker date="1510940862765" expanded="true" signature="572:578" ph="{" />
+                  <marker date="1510940862765" expanded="true" signature="572:648" ph="{...}" />
+                  <marker date="1510940862765" expanded="true" signature="572:649" ph="{...}" />
+                  <marker date="1510940862765" expanded="true" signature="646:648" ph="}" />
+                  <marker date="1510940862765" expanded="true" signature="1779:3478" ph="..." />
+                  <marker date="1510940862765" expanded="true" signature="1791:1920" ph="..." />
+                  <marker date="1510940862765" expanded="true" signature="1810:1908" ph="..." />
+                  <marker date="1510940862765" expanded="true" signature="1998:3468" ph="..." />
+                  <marker date="1510940862765" expanded="true" signature="2383:2723" ph="..." />
+                  <marker date="1510940862765" expanded="true" signature="2743:3086" ph="..." />
+                  <marker date="1510940862765" expanded="true" signature="3106:3448" ph="..." />
+                  <marker date="1510940862765" expanded="true" signature="3969:4732" ph="{...}" />
+                  <marker date="1510940862765" expanded="true" signature="4031:4103" ph="{...}" />
+                  <marker date="1510940862765" expanded="true" signature="4570:4730" ph="{...}" />
+                  <marker date="1510940862765" expanded="true" signature="4619:4724" ph="{...}" />
+                  <marker date="1510940862765" expanded="true" signature="4986:5173" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -119,7 +115,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="device-2017-11-17-184448.png" pinned="false" current-in-tab="true">
+      <file leaf-file-name="device-2017-11-17-184448.png" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/device-2017-11-17-184448.png">
           <provider selected="true" editor-type-id="images">
             <state />
@@ -235,8 +231,8 @@
         <option value="$PROJECT_DIR$/talks.md" />
         <option value="$PROJECT_DIR$/about.md" />
         <option value="$PROJECT_DIR$/_config.yml" />
-        <option value="$PROJECT_DIR$/_posts/2017-11-18-RecyclerView-With-Databinding.md" />
         <option value="$PROJECT_DIR$/_posts/2017-9-13-Flavor-Showcase.md" />
+        <option value="$PROJECT_DIR$/_posts/2017-11-18-RecyclerView-With-Databinding.md" />
       </list>
     </option>
   </component>
@@ -792,7 +788,7 @@
       <workItem from="1508172803366" duration="971000" />
       <workItem from="1508585745189" duration="2600000" />
       <workItem from="1508932405939" duration="869000" />
-      <workItem from="1510939872229" duration="932000" />
+      <workItem from="1510939872229" duration="1160000" />
     </task>
     <task id="LOCAL-00001" summary="Updated flavor showcase">
       <created>1505373547972</created>
@@ -903,7 +899,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14311000" />
+    <option name="totallyTimeSpent" value="14539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="0" width="1926" height="1083" extended-state="6" />
@@ -914,8 +910,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32890704" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39882353" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890704" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39836568" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2296875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1418,51 +1414,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-11-18-RecyclerView-With-Databinding.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="268">
-            <caret line="105" column="69" lean-forward="false" selection-start-line="105" selection-start-column="69" selection-end-line="105" selection-end-column="69" />
-            <folding>
-              <marker date="1510940635197" expanded="true" signature="409:415" ph="{" />
-              <marker date="1510940635197" expanded="true" signature="409:476" ph="{...}" />
-              <marker date="1510940635197" expanded="true" signature="436:450" ph="{" />
-              <marker date="1510940635197" expanded="true" signature="464:474" ph="}" />
-              <marker date="1510940635197" expanded="true" signature="474:476" ph="}" />
-              <marker date="1510940635197" expanded="true" signature="546:548" ph="{" />
-              <marker date="1510940635197" expanded="true" signature="546:552" ph="{" />
-              <marker date="1510940635197" expanded="true" signature="546:622" ph="{...}" />
-              <marker date="1510940635197" expanded="true" signature="546:623" ph="{...}" />
-              <marker date="1510940635197" expanded="true" signature="620:622" ph="}" />
-              <marker date="1510940635197" expanded="true" signature="1753:3452" ph="..." />
-              <marker date="1510940635197" expanded="true" signature="1765:1894" ph="..." />
-              <marker date="1510940635197" expanded="true" signature="1784:1882" ph="..." />
-              <marker date="1510940635197" expanded="true" signature="1972:3442" ph="..." />
-              <marker date="1510940635197" expanded="true" signature="2357:2697" ph="..." />
-              <marker date="1510940635197" expanded="true" signature="2717:3060" ph="..." />
-              <marker date="1510940635197" expanded="true" signature="3080:3422" ph="..." />
-              <marker date="1510940635197" expanded="true" signature="3943:4706" ph="{...}" />
-              <marker date="1510940635197" expanded="true" signature="4005:4077" ph="{...}" />
-              <marker date="1510940635197" expanded="true" signature="4544:4704" ph="{...}" />
-              <marker date="1510940635197" expanded="true" signature="4593:4698" ph="{...}" />
-              <marker date="1510940635197" expanded="true" signature="4960:5147" ph="{...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
           <folding>
-            <marker date="1510940706113" expanded="true" signature="78213:78250" ph="..." />
-            <marker date="1510940706113" expanded="true" signature="78213:78276" ph="..." />
-            <marker date="1510940706113" expanded="true" signature="78213:78321" ph="..." />
-            <marker date="1510940706113" expanded="true" signature="78213:78339" ph="..." />
-            <marker date="1510940706113" expanded="true" signature="78213:78352" ph="..." />
-            <marker date="1510940706113" expanded="true" signature="78213:78367" ph="..." />
+            <marker date="1510941030465" expanded="true" signature="78213:78250" ph="..." />
+            <marker date="1510941030465" expanded="true" signature="78213:78276" ph="..." />
+            <marker date="1510941030465" expanded="true" signature="78213:78321" ph="..." />
+            <marker date="1510941030465" expanded="true" signature="81424:81442" ph="..." />
+            <marker date="1510941030465" expanded="true" signature="81424:81455" ph="..." />
+            <marker date="1510941030465" expanded="true" signature="81424:81470" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1470,6 +1432,40 @@
     <entry file="file://$PROJECT_DIR$/_posts/device-2017-11-17-184448.png">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-11-16-RecyclerView-With-Databinding.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="306">
+            <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <folding>
+              <marker date="1510940862765" expanded="true" signature="435:441" ph="{" />
+              <marker date="1510940862765" expanded="true" signature="435:502" ph="{...}" />
+              <marker date="1510940862765" expanded="true" signature="462:476" ph="{" />
+              <marker date="1510940862765" expanded="true" signature="490:500" ph="}" />
+              <marker date="1510940862765" expanded="true" signature="500:502" ph="}" />
+              <marker date="1510940862765" expanded="true" signature="572:574" ph="{" />
+              <marker date="1510940862765" expanded="true" signature="572:578" ph="{" />
+              <marker date="1510940862765" expanded="true" signature="572:648" ph="{...}" />
+              <marker date="1510940862765" expanded="true" signature="572:649" ph="{...}" />
+              <marker date="1510940862765" expanded="true" signature="646:648" ph="}" />
+              <marker date="1510940862765" expanded="true" signature="1779:3478" ph="..." />
+              <marker date="1510940862765" expanded="true" signature="1791:1920" ph="..." />
+              <marker date="1510940862765" expanded="true" signature="1810:1908" ph="..." />
+              <marker date="1510940862765" expanded="true" signature="1998:3468" ph="..." />
+              <marker date="1510940862765" expanded="true" signature="2383:2723" ph="..." />
+              <marker date="1510940862765" expanded="true" signature="2743:3086" ph="..." />
+              <marker date="1510940862765" expanded="true" signature="3106:3448" ph="..." />
+              <marker date="1510940862765" expanded="true" signature="3969:4732" ph="{...}" />
+              <marker date="1510940862765" expanded="true" signature="4031:4103" ph="{...}" />
+              <marker date="1510940862765" expanded="true" signature="4570:4730" ph="{...}" />
+              <marker date="1510940862765" expanded="true" signature="4619:4724" ph="{...}" />
+              <marker date="1510940862765" expanded="true" signature="4986:5173" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
       </provider>
     </entry>
   </component>
