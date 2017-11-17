@@ -5,11 +5,12 @@ Databinding in RecyclerView + Kotlin
 ## Why use it?
 Get rid of boilerplate code. 
 How many times setText is invoked in your onBindViewHolder? 
-For complex resimilartems it can be really annoying. 
+For complex recycler items it can be really annoying. 
 You have several lines to set texts, images etc. 
-With databinding we will try to shorten these stuff.
+Databinding allows us shorten this stuff.
 
 ## Setup
+
 Frist, enable databinding in module-level build.gradle:
 ```groovy
 android{
@@ -45,7 +46,7 @@ But what if we accidentally set int value to textview? Android framework will tr
 
 At this point we should have ItemViewModel class created. Now let's do real databinding. 
 
-## Using data in XML
+## Binding data in XML
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:tools="http://schemas.android.com/tools">
