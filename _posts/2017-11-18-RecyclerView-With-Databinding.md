@@ -3,15 +3,14 @@ Databinding in RecyclerView + Kotlin
 ![Screenshot](https://raw.githubusercontent.com/rozkminiacz/RecyclerDatabinding/master/screenshot.png)
 
 ## Why use it?
-Get rid of boilerplate code. 
 How many times setText is invoked in your onBindViewHolder? 
 For complex recycler items it can be really annoying. 
 You have several lines to set texts, images etc. 
 Databinding allows us shorten this stuff.
 
-## Setup
+## Gradle setup
 
-Frist, enable databinding in module-level build.gradle:
+First, enable databinding in module-level build.gradle:
 ```groovy
 android{
     ....
@@ -31,7 +30,6 @@ dependencies{
 
 ## RecyclerView item ViewModel
 
-It won't be real MVVM pattern at the time. 
 Consider ViewModel as structure with all data you display. 
 It will be very similar to your API pojos or database entities.
 So what's the difference? 
@@ -40,13 +38,15 @@ In our API we have users first and last name in separate fields.
 Maybe it's convenient for backend database, 
 maybe <any other reason why backend guys structured responses that way>. 
 But look - we always display first and last name i one textview! 
-So our ViewModel should provide already concatenated strings to put in that field. 
-Another example - we display user position in list. API serves us it as int. For our local database it should also be Integer. 
-But what if we accidentally set int value to textview? Android framework will try to find it in R.strings class. And probably won't find it and / or crashes. It would be nice to have position a String in our ViewModel. 
+So our ViewModel should provide **already formatted** strings to put in that field. 
+Another example - we display user position in list. API serves us it as int. 
+But what if we accidentally set int value to TextView? Android will try to find it in R.strings class. And probably won't find it and / or crashes. It would be nice to have position a String in our ViewModel. 
 
-At this point we should have ItemViewModel class created. Now let's do real databinding. 
+At this point we should have ItemViewModel class created. Now let's bind some data. 
 
 ## Binding data in XML
+Wrap all layout definition in <layout></layout> tags.
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:tools="http://schemas.android.com/tools">
@@ -104,7 +104,8 @@ Interesting thing is:
 android:background="@{item.me ? @drawable/item_background_highlight : @drawable/item_background_normal}"
 ```
 
-It is possible to create simple logic in layouts. Way more readable than writing several switches in RecyclerView.Adapter class
+It is possible to create simple **if-else logic in layouts**. 
+Way more readable than writing several 'ifs' in RecyclerView.Adapter class
 
 ## Bind data
 ```kotlin
@@ -133,7 +134,7 @@ class ItemAdapter : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 }
 ```
 
-We create ItemViewHolder with ItemBinding - class generated from item.xml. If you don't see binding class in your classpath, try to rebuild project.
+We create ItemViewHolder with ItemBinding - class generated from item.xml. If you don't see binding class in your classpath, **try to rebuild project**.
 Interesting thing is happening in method bind():
 
 ```kotlin
