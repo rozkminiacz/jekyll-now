@@ -142,5 +142,5 @@ fun bind(itemViewModel: ItemViewModel) {
         }
 ```
 
-## Summary
+## [You can find code to this showcase here](https://github.com/rozkminiacz/RecyclerDatabinding)
 
