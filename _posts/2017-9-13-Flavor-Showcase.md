@@ -91,7 +91,7 @@ android {
 ## Write some interfaces
 
 Lets create our interface and @Inject it to our MainActivity
-``` java
+```java
 public interface ImageManager {
     void loadImage(String imageUrl, ImageView target, Context context);
 }
@@ -101,7 +101,7 @@ public interface ImageManager {
 
 ### Picasso implementation
 app/src/picasso/java/com/rozkmin/flavorshowcase
-``` java
+```java
 public class PicassoImageManager implements ImageManager {
 
     @Inject PicassoImageManager(){}
@@ -113,7 +113,7 @@ public class PicassoImageManager implements ImageManager {
 }
 ```
 
-``` java
+```java
 @Module
 public class ImageManagerModule {
     @Provides
@@ -126,7 +126,7 @@ public class ImageManagerModule {
 
 ### Glide implementation
 app/src/glide/java/com/rozkmin/flavorshowcase
-``` java
+```java
 public class PicassoImageManager implements ImageManager {
 
     @Inject PicassoImageManager(){}
@@ -138,7 +138,7 @@ public class PicassoImageManager implements ImageManager {
 }
 ```
 
-``` java
+```java
 @Module
 public class ImageManagerModule {
     @Provides
@@ -152,7 +152,7 @@ public class ImageManagerModule {
 We created two ImageManagerModule.java files in our flavors dirs. When we switch flavor in gradle, automaticly proper manager will be loaded.
 
 Create dagger component:
-``` java
+```java
 @Component(modules = ImageManagerModule.class)
 public interface MainComponent {
     void inject(MainActivity activity);
@@ -161,7 +161,7 @@ public interface MainComponent {
 
 And inject it in your MainActivity
 
-``` java
+```java
 public class MainActivity extends AppCompatActivity {
 
     MainComponent mainComponent;
@@ -181,7 +181,7 @@ You must build your project to have DaggerMainComponent generated.
 
 Now we can @Inject ImageManager and load some image from network:
 
-```
+```java
 public class MainActivity extends AppCompatActivity {
 
     MainComponent mainComponent;
