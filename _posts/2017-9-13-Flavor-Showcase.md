@@ -55,8 +55,8 @@ android {
         
 ```
 
-
-
+You can choose between flavors in Android Studio:
+![Build variants](https://raw.githubusercontent.com/rozkminiacz/rozkminiacz.github.io/master/_posts/fc-showcase-variants.png)
 
 
 ## Write our view with image and text
@@ -215,3 +215,9 @@ public class MainActivity extends AppCompatActivity {
 Build project and test all flavors.
 
 Now you can load images without any Glide or Picasso imports in your code!
+
+![Loaded with Glide](https://raw.githubusercontent.com/rozkminiacz/rozkminiacz.github.io/master/_posts/fc-showcase-glide.png)
+
+![Loaded with Picasso](https://raw.githubusercontent.com/rozkminiacz/rozkminiacz.github.io/master/_posts/fc-showcase-picasso.png)
+
+## [You can find code to this showcase here](https://github.com/rozkminiacz/FlavorShowcase)

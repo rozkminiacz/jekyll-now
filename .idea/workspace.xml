@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d86b5254-dcdf-4a3b-a6c3-0ae0b9328d44" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-9-13-Flavor-Showcase.md" afterPath="$PROJECT_DIR$/_posts/2017-9-13-Flavor-Showcase.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,12 +17,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="2017-11-18-RecyclerView-With-Databinding.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2017-11-18-RecyclerView-With-Databinding.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2017-11-18-RecyclerView-With-Databinding.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="60">
-                <caret line="4" column="60" lean-forward="true" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+              <first_editor relative-caret-position="378">
+                <caret line="148" column="96" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="96" />
                 <folding>
                   <marker date="1511126176000" expanded="true" signature="422:489" ph="{...}" />
                   <marker date="1511126176000" expanded="true" signature="449:463" ph="{" />
@@ -40,6 +41,47 @@
                   <marker date="1511126176000" expanded="true" signature="4580:4740" ph="{...}" />
                   <marker date="1511126176000" expanded="true" signature="4629:4734" ph="{...}" />
                   <marker date="1511126176000" expanded="true" signature="5000:5187" ph="{...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-9-14-FCM-Both-On-Back-And-Mobile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2017-9-14-FCM-Both-On-Back-And-Mobile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-9-13-Flavor-Showcase.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2017-9-13-Flavor-Showcase.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="408">
+                <caret line="222" column="90" lean-forward="false" selection-start-line="222" selection-start-column="90" selection-end-line="222" selection-end-column="90" />
+                <folding>
+                  <marker date="1511126875000" expanded="true" signature="582:1132" ph="{...}" />
+                  <marker date="1511126875000" expanded="true" signature="652:1130" ph="{...}" />
+                  <marker date="1511126875000" expanded="true" signature="672:886" ph="{...}" />
+                  <marker date="1511126875000" expanded="true" signature="907:1120" ph="{...}" />
+                  <marker date="1511126875000" expanded="true" signature="2019:2765" ph="..." />
+                  <marker date="1511126875000" expanded="true" signature="2228:2364" ph="..." />
+                  <marker date="1511126875000" expanded="true" signature="2380:2749" ph="..." />
+                  <marker date="1511126875000" expanded="true" signature="3275:3341" ph="{...}" />
+                  <marker date="1511126875000" expanded="false" signature="3484:3494" ph=" { " />
+                  <marker date="1511126875000" expanded="false" signature="3509:3515" ph=" }" />
+                  <marker date="1511126875000" expanded="true" signature="3792:3858" ph="{...}" />
+                  <marker date="1511126875000" expanded="false" signature="3999:4009" ph=" { " />
+                  <marker date="1511126875000" expanded="false" signature="4024:4030" ph=" }" />
+                  <marker date="1511126875000" expanded="true" signature="4567:4811" ph="{...}" />
+                  <marker date="1511126875000" expanded="true" signature="5194:5262" ph="{...}" />
+                  <marker date="1511126875000" expanded="true" signature="5298:5427" ph="{...}" />
+                  <marker date="1511126875000" expanded="true" signature="5458:5614" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -75,9 +117,9 @@
         <option value="$PROJECT_DIR$/talks.md" />
         <option value="$PROJECT_DIR$/about.md" />
         <option value="$PROJECT_DIR$/_config.yml" />
-        <option value="$PROJECT_DIR$/_posts/2017-9-13-Flavor-Showcase.md" />
         <option value="$PROJECT_DIR$/_posts/2017-11-16-RecyclerView-With-Databinding.md" />
         <option value="$PROJECT_DIR$/_posts/2017-11-18-RecyclerView-With-Databinding.md" />
+        <option value="$PROJECT_DIR$/_posts/2017-9-13-Flavor-Showcase.md" />
       </list>
     </option>
   </component>
@@ -584,7 +626,7 @@
       <workItem from="1508585745189" duration="2600000" />
       <workItem from="1508932405939" duration="869000" />
       <workItem from="1510939872229" duration="1300000" />
-      <workItem from="1511125752036" duration="387000" />
+      <workItem from="1511125752036" duration="760000" />
     </task>
     <task id="LOCAL-00001" summary="Updated flavor showcase">
       <created>1505373547972</created>
@@ -695,10 +737,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15597000" />
+    <option name="totallyTimeSpent" value="15970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -709,7 +752,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890704" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35411766" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35411766" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22916667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -780,11 +823,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-9-14-FCM-Both-On-Back-And-Mobile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2017-11-18-RecyclerView-With-Databinding.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="4" column="60" lean-forward="true" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+          <first_editor relative-caret-position="378">
+            <caret line="148" column="96" lean-forward="true" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="96" />
             <folding>
               <marker date="1511126176000" expanded="true" signature="422:489" ph="{...}" />
               <marker date="1511126176000" expanded="true" signature="449:463" ph="{" />
@@ -803,6 +854,35 @@
               <marker date="1511126176000" expanded="true" signature="4580:4740" ph="{...}" />
               <marker date="1511126176000" expanded="true" signature="4629:4734" ph="{...}" />
               <marker date="1511126176000" expanded="true" signature="5000:5187" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-9-13-Flavor-Showcase.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="408">
+            <caret line="222" column="90" lean-forward="false" selection-start-line="222" selection-start-column="90" selection-end-line="222" selection-end-column="90" />
+            <folding>
+              <marker date="1511126875000" expanded="true" signature="582:1132" ph="{...}" />
+              <marker date="1511126875000" expanded="true" signature="652:1130" ph="{...}" />
+              <marker date="1511126875000" expanded="true" signature="672:886" ph="{...}" />
+              <marker date="1511126875000" expanded="true" signature="907:1120" ph="{...}" />
+              <marker date="1511126875000" expanded="true" signature="2019:2765" ph="..." />
+              <marker date="1511126875000" expanded="true" signature="2228:2364" ph="..." />
+              <marker date="1511126875000" expanded="true" signature="2380:2749" ph="..." />
+              <marker date="1511126875000" expanded="true" signature="3275:3341" ph="{...}" />
+              <marker date="1511126875000" expanded="false" signature="3484:3494" ph=" { " />
+              <marker date="1511126875000" expanded="false" signature="3509:3515" ph=" }" />
+              <marker date="1511126875000" expanded="true" signature="3792:3858" ph="{...}" />
+              <marker date="1511126875000" expanded="false" signature="3999:4009" ph=" { " />
+              <marker date="1511126875000" expanded="false" signature="4024:4030" ph=" }" />
+              <marker date="1511126875000" expanded="true" signature="4567:4811" ph="{...}" />
+              <marker date="1511126875000" expanded="true" signature="5194:5262" ph="{...}" />
+              <marker date="1511126875000" expanded="true" signature="5298:5427" ph="{...}" />
+              <marker date="1511126875000" expanded="true" signature="5458:5614" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
