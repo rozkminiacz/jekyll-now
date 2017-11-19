@@ -1,3 +1,5 @@
+![Screenshot](https://raw.githubusercontent.com/rozkminiacz/rozkminiacz.github.io/master/_posts/rows.png)
+
 
 ## Why use it?
 How many times setText is invoked in your onBindViewHolder? 
