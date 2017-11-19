@@ -57,6 +57,8 @@ android {
 
 
 
+
+
 ## Write our view with image and text
 
 ### MainActivity
