@@ -1,3 +1,6 @@
+![Build variants](https://raw.githubusercontent.com/rozkminiacz/rozkminiacz.github.io/master/_posts/fc-showcase-variants.png)
+
+
 ## We'll try to do the following thing:
 * create an app that shows random image from lorempixel
 * create two flavors

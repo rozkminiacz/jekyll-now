@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d86b5254-dcdf-4a3b-a6c3-0ae0b9328d44" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-9-13-Flavor-Showcase.md" afterPath="$PROJECT_DIR$/_posts/2017-9-13-Flavor-Showcase.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,8 +61,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-9-13-Flavor-Showcase.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="408">
-                <caret line="222" column="90" lean-forward="false" selection-start-line="222" selection-start-column="90" selection-end-line="222" selection-end-column="90" />
+              <first_editor relative-caret-position="3105">
+                <caret line="211" column="1" lean-forward="true" selection-start-line="211" selection-start-column="1" selection-end-line="211" selection-end-column="1" />
                 <folding>
                   <marker date="1511126875000" expanded="true" signature="582:1132" ph="{...}" />
                   <marker date="1511126875000" expanded="true" signature="652:1130" ph="{...}" />
@@ -626,7 +625,7 @@
       <workItem from="1508585745189" duration="2600000" />
       <workItem from="1508932405939" duration="869000" />
       <workItem from="1510939872229" duration="1300000" />
-      <workItem from="1511125752036" duration="760000" />
+      <workItem from="1511125752036" duration="831000" />
     </task>
     <task id="LOCAL-00001" summary="Updated flavor showcase">
       <created>1505373547972</created>
@@ -737,7 +736,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15970000" />
+    <option name="totallyTimeSpent" value="16041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -863,8 +862,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-9-13-Flavor-Showcase.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="408">
-            <caret line="222" column="90" lean-forward="false" selection-start-line="222" selection-start-column="90" selection-end-line="222" selection-end-column="90" />
+          <first_editor relative-caret-position="3105">
+            <caret line="211" column="1" lean-forward="true" selection-start-line="211" selection-start-column="1" selection-end-line="211" selection-end-column="1" />
             <folding>
               <marker date="1511126875000" expanded="true" signature="582:1132" ph="{...}" />
               <marker date="1511126875000" expanded="true" signature="652:1130" ph="{...}" />
