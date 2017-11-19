@@ -1,6 +1,3 @@
-Databinding in RecyclerView + Kotlin
-
-![Screenshot](https://raw.githubusercontent.com/rozkminiacz/RecyclerDatabinding/master/screenshot.png)
 
 ## Why use it?
 How many times setText is invoked in your onBindViewHolder? 
@@ -104,7 +101,7 @@ Interesting thing is:
 android:background="@{item.me ? @drawable/item_background_highlight : @drawable/item_background_normal}"
 ```
 
-It is possible to create simple **if-else logic in layouts**. 
+It is possible to create simple **if-else logic in layouts**. We are using it to change style and highlight current user row. 
 Way more readable than writing several 'ifs' in RecyclerView.Adapter class
 
 ## Bind data
@@ -143,6 +140,9 @@ fun bind(itemViewModel: ItemViewModel) {
             itemBinding.executePendingBindings() //similar to notifyDataSetChanged()
         }
 ```
+
+![Screenshot](https://raw.githubusercontent.com/rozkminiacz/RecyclerDatabinding/master/screenshot.png)
+
 
 ## [You can find code to this showcase here](https://github.com/rozkminiacz/RecyclerDatabinding)
 
