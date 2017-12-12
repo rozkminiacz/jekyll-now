@@ -3,6 +3,8 @@ layout: page
 title: Conferences, meetup talks
 permalink: /talks/
 
+#Talks
+
 ## Droidcon PL
 [link](http://droidcon.pl/)
 [slides](https://rozkminiacz.github.io/DroidconSlides/#/)
