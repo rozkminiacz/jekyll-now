@@ -17,7 +17,7 @@ ___
 [link](http://webbmeetup.com/)
 [slides](http://rozkmin-presentations.gitlab.io/WeBBMeetup/#/)
 ### Make your app modular!
-#### 31 XI 2017, Bielsko-Biała
+#### 31 XI 2017, Bielsko Biała
 
 ---
 
