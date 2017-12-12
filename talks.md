@@ -2,6 +2,21 @@
 layout: page
 title: Conferences, meetup talks
 permalink: /talks/
+
+## Droidcon PL
+[link](http://droidcon.pl/)
+[slides](https://rozkminiacz.github.io/DroidconSlides/#/)
+### Make you app modular!
+#### 1-2 XII 2017, Kraków
+
+___
+
+## WeBBMeetup
+[link](http://webbmeetup.com/)
+[slides](http://rozkmin-presentations.gitlab.io/WeBBMeetup/#/)
+### Make your app modular!
+#### 31 XI 2017, Bielsko-Biała
+
 ---
 
 ## BIT Student Meetup
