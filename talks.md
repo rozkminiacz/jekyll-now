@@ -60,5 +60,3 @@ ___
 [link](https://www.facebook.com/LiczbyKomputeryZycie)
 ### Touch Dynamics as a biometrics feature
 #### 8 IV 2016, Kraków
-
----
