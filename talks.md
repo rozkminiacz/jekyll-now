@@ -2,7 +2,7 @@
 layout: page
 title: Conferences, meetup talks
 permalink: /talks/
-___
+---
 
 ## Droidcon PL
 [link](http://droidcon.pl/)
@@ -10,7 +10,7 @@ ___
 ### Make you app modular!
 #### 1-2 XII 2017, Kraków
 
-___
+---
 
 ## WeBBMeetup
 [link](http://webbmeetup.com/)
@@ -60,5 +60,3 @@ ___
 [link](https://www.facebook.com/LiczbyKomputeryZycie)
 ### Touch Dynamics as a biometrics feature
 #### 8 IV 2016, Kraków
-
----
