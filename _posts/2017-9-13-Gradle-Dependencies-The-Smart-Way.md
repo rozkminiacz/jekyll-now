@@ -1,4 +1,7 @@
 ## Manage your dependencies like a boss
+
+We will cover the following topics:
+
 * defining variables (version codes)
 * custom compile configurations
 * dependencies.gradle in separate file
@@ -66,27 +69,25 @@ dependencies {
         testCompile 'junit:junit:4.12'
         apt 'com.jakewharton:butterknife-compiler:8.4.0'
     }
-
-
 }
 
 ```
 
-In short words - a lot of **ugly** dependencies. and sometimes comments what does specific library do. 
+In short words — a lot of ugly dependencies. and sometimes comments what does specific library do.
 
 Forget it. In this post we will create human readable and developer friendly build.gradle for your next app.
 
 ## Defining variables
 
-First that we will do to make this code clean will be introducing variables.
+First thing we will do to make gradle code cleanear, will be introducing variables.
 
+In module-level build.gradle write:
 Write 
 ```groovy
 def googlePlayVersion = '1.20.2' 
 ```
 
 Now we can use it in our build file like that:
-
 ```groovy
 productFlavors {
     freeFlavor {
@@ -104,7 +105,7 @@ productFlavors {
 ```
 
 ### Automate naming apks on different flavors and configs:
-
+When you build app for QA team, you usually want to change .apk name:
 ```groovy
 applicationVariants.all { variant ->
    variant.outputs.each { output ->
@@ -117,8 +118,7 @@ applicationVariants.all { variant ->
 ```
 
 ## Keep dependencies in separate file
-Now let's do something more tricky. Create file dependencies.gradle in your project directory:
-
+Now let’s do something more tricky. Create file dependencies.gradle in your project directory:
 ```groovy
 ext {
     def RxJava2Version = '2.1.1'
@@ -140,8 +140,9 @@ ext {
 }
 ```
 
-Now in your build top-level build file write **apply from: 'dependencies.gradle'**
-
+Now in your top-level build.gradle file write
+ 
+apply from: ‘dependencies.gradle’
 ```groovy
 buildscript {
     repositories {
@@ -179,26 +180,21 @@ dependencies {
 }
 ```
 
-I highly recommend to write these blocks for all your grouped libraries.
-Now you build.gradle is much cleaner and easier to maintain. 
-Its also great because you can keep.your favourite libraries in one file, keep it on some gist and just copy-paste it when creating new project. 
-Much better than commenting and uncommenting specific lines.
+I highly recommend to use these code in all your projects. build.gradle will be much cleaner and easier to maintain. 
+It’s great because you can keep your favourite libraries in one file, store them in some gist and just copy-paste them when creating new project. It also helps you keeping the same versions of libraries in multi-module projects. Much better than commenting and uncommenting specific lines or switching between several module-level build.gradle just to update RxJava version.
 
 ## Compile configurations
-You don't need jUnit or Mockito in you production code. If you use it, something went **very wrong**.
-
-Gradle gives us some predefined configurations:
+You don’t need jUnit or Mockito in you application code. If you use it, something went very wrong.
+We have some predefined configurations for test builds:
 
 ```groovy
 testCompile unitTestDependencies.values()
 androidTestCompile testDependencies.values()
 ```
-It is set by default in android starter projects. 
-
+They are available in android starter projects.
 ### Custom configurations
-Let’s say you have to build app for debug, other for your QA and build another one to show to your customers, 
-and you want to include in it different version of your module. 
-Based on flavor and build type following compile configs will be generated.
+Let’s say you have to build app for development, other for your QA team and build another one to show at demo to your customers. You want to include different version of your modules in app.
+Based on flavors and build type following compile configs will be generated:
 
 ```groovy
 freeFlavorReleaseCompile project(path: ':mylibrary', configuration: 'release')
@@ -218,8 +214,9 @@ signingConfigs {
        keyPassword "${System.env.PW_DA_KEYSTORE}"
    }
 }
-
 ```
 
-Use it for keeping your developer keys secret. You don't have to (and probably should not) keep your google 
-play secrets on repo and share across your team. The same applies if you have some other secrets that you want to use only during build.
+Use it for keeping your developer keys secret. You don’t have to (and probably should not) keep your google play secrets on repo and share across your team. The same applies if you have some other secrets that you want to use only during build.
+
+
+How do you manage your dependencies? Share some gradle tips and tricks in comments.
