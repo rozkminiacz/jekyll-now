@@ -1,13 +1,15 @@
-# Testing Model-View-Presenter with Spek
 
-As we can read on Spek website, Spek is:
+![spek-intelij](spek-header.png)
+
+
+As we can read on [Spek website](http://spekframework.org/), Spek is:
 >A Kotlin Specification Framework for the JVM
 
 Your unit tests answers the following question:
  
 What **it** should do **on** action in **given** situation?
 
-Spek helps you build answers for this question!
+Spek helps you ask proper question!
 
 ```kotlin
 on("presenter detach"){
