@@ -4,6 +4,14 @@ title: Some of my Github repos
 permalink: /projects/
 ---
 
+## Spek BDD Extensions
+**#spek #testing #kotlin**
+
+[rozkminiacz/SpekBddDsl](https://github.com/rozkminiacz/SpekBddDsl)
+
+Set of extensions to match Spek specifications with BDD language
+
+---
 ## GoogleMapsPolyline
 
 **#directions-api #kotlin #android #polyline**
