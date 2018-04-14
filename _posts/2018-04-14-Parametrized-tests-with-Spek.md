@@ -19,8 +19,8 @@ Pretty ugly, huh? Full example can be found [here](https://github.com/junit-team
 
 
 ## We can do better
-Imagine, if we could write our tests like we write our code. No annotation driven development, 
-no unnecessary static methods and clear output. **That's were Spek comes to help**.
+Imagine, if we could write our tests like we write our code. Clear output, no annotation driven development, and
+no unnecessary static methods. **That's were Spek comes to help**.
 
 >If you are not familiar with using Spek in unit testing check my [article](http://rozkmin.me/Model-View-Presenter-writing-Spek-specification/) or other blog posts.
 
