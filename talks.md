@@ -4,8 +4,27 @@ title: Conferences, meetup talks
 permalink: /talks/
 ---
 
+## Android Tech Talks #19
+[link](https://www.meetup.com/pl-PL/GDG-Krakow/events/248766813/)
+
+[slides](https://rozkminiacz.github.io/DroidconSlides/#/)
+### Modular Mobile Apps
+#### 12 IV 2018, Kraków
+
+---
+
+## TOAST - Android Developers Meetup #16
+[link](https://www.meetup.com/pl-PL/TOAST-Android-Developers-Meetups/events/248219076/)
+
+[slides](http://rozkmin.me/ModularMobileApps/#/)
+### Modular Mobile Apps
+#### 16 III 2018, Wrocław
+
+---
+
 ## Droidcon PL
 [link](http://droidcon.pl/)
+
 [slides](https://rozkminiacz.github.io/DroidconSlides/#/)
 ### Make you app modular!
 #### 1-2 XII 2017, Kraków
@@ -14,6 +33,7 @@ permalink: /talks/
 
 ## WeBBMeetup
 [link](http://webbmeetup.com/)
+
 [slides](http://rozkmin-presentations.gitlab.io/WeBBMeetup/#/)
 ### Make your app modular!
 #### 31 XI 2017, Bielsko Biała
