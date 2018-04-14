@@ -1,5 +1,4 @@
-
-![spek-intelij](spek-header.png)
+![spek-intelij](https://raw.githubusercontent.com/rozkminiacz/rozkminiacz.github.io/master/_posts/spek-header.pngspek-header.png)
 
 
 As we can read on [Spek website](http://spekframework.org/), Spek is:
@@ -27,7 +26,7 @@ And it can be displayed really nicely in Intellij/AS
 
 ## Adding and configuring Spek in project
 
-I like to keep gradle artifacts and versions in separate file:
+I like to keep gradle artifacts and versions in aseparate file:
 
 testDependencies.gradle:
 ```groovy

@@ -53,6 +53,7 @@ ext {
 ```
 
 And attach them in module-level build.gradle file like that:
+
 ```groovy
 dependencies {
     (...)
@@ -82,7 +83,7 @@ This functionality behaviour can be described like this:
 ### View contract:
 
 The abstraction over this screen behavior can be presented in view contract:
-
+https://gist.github.com/rozkminiacz/f783b3e210314bffa89e18e56cd1818c
 ```kotlin
 interface PeopleListContract {
     interface View {
