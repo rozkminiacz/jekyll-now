@@ -7,8 +7,8 @@ permalink: /talks/
 ## Android Tech Talks #19
 [link](https://www.meetup.com/pl-PL/GDG-Krakow/events/248766813/)
 
-[slides](https://rozkminiacz.github.io/DroidconSlides/#/)
-### Modular Mobile Apps
+[slides](http://rozkmin.me/ATT-Spek-Slides/#/)
+### Effective testing with Spek
 #### 12 IV 2018, Kraków
 
 ---
