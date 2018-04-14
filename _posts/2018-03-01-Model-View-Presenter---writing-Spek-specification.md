@@ -1,4 +1,5 @@
-![spek-intelij](https://raw.githubusercontent.com/rozkminiacz/rozkminiacz.github.io/master/_posts/spek-header.pngspek-header.png)
+
+![spek-intelij](https://raw.githubusercontent.com/rozkminiacz/rozkminiacz.github.io/master/_posts/spek-header.png)
 
 
 As we can read on [Spek website](http://spekframework.org/), Spek is:
@@ -21,12 +22,12 @@ on("presenter detach"){
 
 And it can be displayed really nicely in Intellij/AS
 
-![spek-intelij](spek-running-480.gif)
+![spek-intelij](https://raw.githubusercontent.com/rozkminiacz/rozkminiacz.github.io/master/_posts/spek-running-480.gif)
 
 
 ## Adding and configuring Spek in project
 
-I like to keep gradle artifacts and versions in aseparate file:
+I like to keep gradle artifacts and versions in separate file:
 
 testDependencies.gradle:
 ```groovy
@@ -228,7 +229,7 @@ As you can see - we use Mockito as in normal unit test.
 
 When you launch test in your Jetbrains IDE you should see something like this:
 
-![spek-intelij](spek-intelij.png)
+![spek-intelij](https://raw.githubusercontent.com/rozkminiacz/rozkminiacz.github.io/master/_posts/spek-intelij.png)
 
 Some of our tests failed - we don't have any logic implemented in our presenter! 
 Let's write simple logic with Rx:

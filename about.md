@@ -6,7 +6,7 @@ permalink: /about/
 
 ## Jarosław Michalik
 
-Android developer @ Sointeractive
+Android developer
 
 Tech mentor @ Jaksiemasz.care
 
