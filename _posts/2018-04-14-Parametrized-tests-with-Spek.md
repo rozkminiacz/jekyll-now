@@ -1,4 +1,7 @@
-## Parametrized test with jUnit
+![Header](https://raw.githubusercontent.com/rozkminiacz/rozkminiacz.github.io/master/_posts/spek-parametrized-header.png)
+
+
+
 Well, if you want have different input on your tests while using jUnit, you have to use parametrized runner and add some methods with dedicated annotations.
 And implement method returning list of parameters and expected output.
 
@@ -63,7 +66,7 @@ class DistanceConverterSpecificiation : Spek({
 
 What happened? We are still repeating ourselves. It is as long as ```@Parametrized``` jUnit test or just test with many methods.
 
-Spek DSL is huge lambda - we can use any language features and libraries.
+Spek DSL is huge lambda - we can use any Kotlin language features.
 
 Let's start with defining our test cases and expected outcome in ```map<Double, String>```:
 
