@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Some of my Github repos
+title: Projects and libs
 permalink: /projects/
 ---
 
