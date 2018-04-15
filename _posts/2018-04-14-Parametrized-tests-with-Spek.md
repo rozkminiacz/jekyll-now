@@ -1,4 +1,4 @@
-![Header](https://raw.githubusercontent.com/rozkminiacz/rozkminiacz.github.io/master/_posts/distracetd-spek-junit.jpg)
+![Header](https://raw.githubusercontent.com/rozkminiacz/rozkminiacz.github.io/master/_posts/distracted-spek-junit.jpg)
 
 There are some cases in which we have to check our system for various input. 
 Good example would be some kind of form validation both on front and backend. 
