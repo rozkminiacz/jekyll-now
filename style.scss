@@ -252,9 +252,11 @@ nav {
   border-bottom: none;
 }
 
-.posts > img {
-  width: 100%;
-  max-width: 600px;
+.posts {
+  img {
+    width: 100%;
+    max-width: 600px;
+  }
 }
 
 .post {
@@ -294,3 +296,4 @@ footer {
 @import "table";
 @import "highlights";
 @import "svg-icons";
+}
