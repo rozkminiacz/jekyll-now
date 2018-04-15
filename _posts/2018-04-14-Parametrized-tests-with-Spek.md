@@ -1,8 +1,12 @@
 ![Header](https://raw.githubusercontent.com/rozkminiacz/rozkminiacz.github.io/master/_posts/spek-parametrized-header.png)
 
+There are some cases in which we have to check our system for various input. 
+Good example would be some kind of form validation both on front and backend. 
+There are many approaches to create test code which covers all necessary cases, 
+we can just copy-paste methods (not recommended), make many assertions in one test method (we can lost some valuable errors) 
+or use parametrized test functionality bundled within test framework we are using.
 
-
-Well, if you want have different input on your tests while using jUnit, you have to use parametrized runner and add some methods with dedicated annotations.
+Well, if you want have different input on your tests while using jUnit4, you have to use parametrized runner and add some methods with dedicated annotations.
 And implement method returning list of parameters and expected output.
 
 ```java
@@ -27,17 +31,16 @@ no unnecessary static methods. **That's were Spek comes to help**.
 Consider simple distance converter - we parse given distance in meters to desired unit. 
 
 |value [m]|displayed string|
-|--- |--- |
-|753|753m|
-|1337|1.34km|
-|15888|15.9km|
-|31270|31km|
-|51000|>50km|
+|:---: | :---: |
+|753|753 m|
+|1337|1.34 km|
+|15888|15.9 km|
+|31270|31 km|
+|51000|>50 km|
 
+It's simple case - implementation is trivial. It only takes one ```switch``` or ```when``` and function to round number with desired precision to solve this case.
 
-It's simple case - implementation is just one ```switch``` or ```when``` with function to round number with desired precision.
-
-However, we can write specification and test this simple case using Spek. 
+Despite of the fact, that implementation is simple, we should unit test it and additionally we can write specification using Spek. 
 
 ```kotlin
 class DistanceConverterSpecificiation : Spek({
@@ -64,22 +67,22 @@ class DistanceConverterSpecificiation : Spek({
 ```
 
 
-What happened? We are still repeating ourselves. It is as long as ```@Parametrized``` jUnit test or just test with many methods.
+Run this snippet and check what is happening? We are still repeating ourselves. It is as long as ```@Parametrized``` jUnit test or just test with many methods.
 
-Spek DSL is huge lambda - we can use any Kotlin language features.
+>Spek DSL is a huge lambda, so we can use any Kotlin language features.
 
-Let's start with defining our test cases and expected outcome in ```map<Double, String>```:
+Let's start with defining our test cases and expected outcome using ```Map<Double, String>```:
 
 ```kotlin
 val testCases = mapOf(
-                61888.123 to ">50km",
-                38777.23 to "38.8km",
-                16984.44 to "17.0km",
-                987.98 to "988m"
+                61888.123 to ">50 km",
+                38777.23 to "38.8 km",
+                16984.44 to "17.0 km",
+                987.98 to "988 m"
         )
 ```
 
-Now we can use ```forEach{}``` to generate test cases:
+Now we can use ```forEach{}``` to generate desired test cases:
 
 ```kotlin
 testCases.forEach { value, expectedValue ->
@@ -89,16 +92,16 @@ testCases.forEach { value, expectedValue ->
         }
 ```
 
-And finally we can make some assertion. Full example will look like this:
+Finally we should make some assertion. Full example will look like this:
 
 ```kotlin
 class DistanceConverterSpecificiation : Spek({
     describe("distance converter") {
         val testCases = mapOf(
-                61888.123 to ">50km",
-                38777.23 to "38.8km",
-                16984.44 to "17.0km",
-                987.98 to "988m"
+                61888.123 to ">50 km",
+                38777.23 to "38.8 km",
+                16984.44 to "17.0 km",
+                987.98 to "988 m"
         )
         val converter = DistanceConverter()
         testCases.forEach { value, expectedValue ->
@@ -112,6 +115,15 @@ class DistanceConverterSpecificiation : Spek({
 })
 ```
 
+Run this snippet and check results.
+
 ![Parametrized test outcome](https://raw.githubusercontent.com/rozkminiacz/rozkminiacz.github.io/master/_posts/spek-parametrized.png)
 
+## Conclusion
 
+When creating unit tests we have to be sure that all (reasonable) cases are covered. In provided example (distance converter) we used ```Map<Double, String>``` and ```forEach{k,v -> }``` 
+to parametrize our test and create ```on()``` ActionBody and ```it()``` TestBody in a stream. 
+We have performed checks and on each value, asserted expected outcome and displayed test results nicely in our IDE. 
+We haven't lost any valuable info, and we can add another test cases in clear Kotlin syntax.
+
+I hope that you find this article useful, and it will help you looking at parametrized tests in a different way.
