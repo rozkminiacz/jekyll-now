@@ -1,10 +1,10 @@
 ![Header](https://raw.githubusercontent.com/rozkminiacz/rozkminiacz.github.io/master/_posts/distracted-spek-junit.jpg)
 
-There are some cases in which we have to check our system for various input. 
-Good example would be some kind of form validation both on front and backend. 
-There are many approaches to create test code which covers all necessary cases, 
-we can just copy-paste methods (not recommended), make many assertions in one test method (we can lost some valuable errors) 
-or use parametrized test functionality bundled within test framework we are using.
+Everyone knows the situations when we have to check our system for various input. 
+A good example would be login/password validation performed both on front and backend. 
+There are many approaches to create a test code which covers all necessary cases, 
+we can just copy-paste methods (not recommended), make many assertions in one test method (we can lost some valuable error info) 
+or use parametrized test functionality bundled within test framework we are using. Keep in mind that there are more options available.
 
 Well, if you want have different input on your tests while using jUnit4, you have to use parametrized runner and add some methods with dedicated annotations.
 And implement method returning list of parameters and expected output.
@@ -40,7 +40,7 @@ Consider simple distance converter - we parse given distance in meters to desire
 
 It's simple case - implementation is trivial. It only takes one ```switch``` or ```when``` and function to round number with desired precision to solve this case.
 
-Despite of the fact, that implementation is simple, we should unit test it and additionally we can write specification using Spek. 
+Despite of the fact, that implementation is simple, we should prepare unit test it. Using Spek we can also write BDD style tests and prepare a specification at one approach.
 
 ```kotlin
 class DistanceConverterSpecificiation : Spek({
@@ -67,7 +67,7 @@ class DistanceConverterSpecificiation : Spek({
 ```
 
 
-Run this snippet and check what is happening? We are still repeating ourselves. It is as long as ```@Parametrized``` jUnit test or just test with many methods.
+Run this snippet and check results? We have tested two cases, however we are still repeating ourselves. It is as long and ugly as ```@Parametrized``` jUnit test or just test with many methods.
 
 >Spek DSL is a huge lambda, so we can use any Kotlin language features.
 
@@ -125,5 +125,7 @@ When creating unit tests we have to be sure that all (reasonable) cases are cove
 to parametrize our test and create ```on()``` ActionBody and ```it()``` TestBody in a stream. 
 We have performed checks and on each value, asserted expected outcome and displayed test results nicely in our IDE. 
 We haven't lost any valuable info, and we can add another test cases in clear Kotlin syntax.
+
+Using Spek gives you full power of Kotlin - you can write your tests just like you write your code and make use of language features.
 
 I hope that you find this article useful, and it will help you looking at parametrized tests in a different way.
