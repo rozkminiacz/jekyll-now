@@ -5,13 +5,17 @@ layout: default
   {% for post in site.posts %}
     <article class="post mdl-card">
 
-      <h1 class="mdl-card__title-text"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <div class="mdl-card__title">
+        <h1 class="mdl-card__title-text"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      </div>
 
       <div class="entry">
         {{ post.excerpt }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <div class="mdl-card__actions">
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      </div>
     </article>
 
   {% endfor %}
