@@ -4,6 +4,22 @@ title: Conferences, meetup talks
 permalink: /talks/
 ---
 
+## Android Tech Talks #24
+[slides](http://rozkmin.me/NastyWordsAndHowToDetektThem/detekt-ATT24.pdf)
+### Nasty words and how to Detekt them
+#### 14 III 2019, Kraków
+
+---
+
+## Mobilization 8
+[slides](http://rozkmin.me/KotlinUnitTesting/)
+
+[video](www.youtube.com/watch?v=0PsVmLE3zss)
+
+### Testing with Kotlin
+#### 20 XI 2018
+---
+
 ## Android Tech Talks #19
 [link](https://www.meetup.com/pl-PL/GDG-Krakow/events/248766813/)
 
